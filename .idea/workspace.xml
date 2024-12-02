@@ -31,24 +31,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.click.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cursor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.drag_drop.executor&quot;: &quot;Run&quot;,
-    &quot;Python.replace1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Main.executor": "Run",
+    "Python.TestGame.executor": "Run",
+    "Python.UI_searh_count.executor": "Run",
+    "Python.click.executor": "Run",
+    "Python.cursor.executor": "Run",
+    "Python.drag_drop.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mousDef.executor": "Run",
+    "Python.replace1.executor": "Run",
+    "Python.script_def.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.var1.executor": "Run",
+    "Python.var2.executor": "Run",
+    "Python.zapusk.executor": "Run",
+    "Python.е.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Основание/Progect Python/Skrin/Skrin/.venv"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv" />
-      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\Scripts" />
-      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\test" />
       <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\Script" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\Script" />
+      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\Scripts" />
+      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv" />
+      <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv\test" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -81,5 +95,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New" />
     <option name="LAST_COMMIT_MESSAGE" value="New" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.venv/Script/script_def.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
