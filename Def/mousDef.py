@@ -1,5 +1,6 @@
 import pyautogui
 import keyboard
+from pynput.keyboard import Key, Controller
 
 def click_mouse(x, y): # перемещение и нажатие
     # Перемещаем курсор мыши к указанным координатам

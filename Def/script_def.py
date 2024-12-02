@@ -5,7 +5,11 @@ import tkinter as tk
 import pyautogui
 import re
 import json
-from datetime import datetime, timezone
+import webbrowser
+import schedule
+import time
+from datetime import datetime, timedelta, timezone
+
 
 
 def preprocess_image(image): # Преобразование в оттенки серого
@@ -132,3 +136,41 @@ def minutes_passed_since(date, time):
     minutes_passed = int(delta.total_seconds() / 60)
 
     return minutes_passed
+
+def open_tradingview_page():
+    url = "https://ru.tradingview.com/chart/R07wFehy/"
+    webbrowser.open(url)
+
+def reset_and_start_scheduler():
+    # Сбрасываем текущий планировщик
+    schedule.clear()
+
+    # Получаем текущее время
+    now = datetime.now()
+
+    # Определяем ближайшее время для выполнения задачи
+    next_run_time = now.replace(second=1, microsecond=0)
+    print(next_run_time)
+    if now.minute >= 30:
+        next_run_time += timedelta(minutes=60 - now.minute)
+    else:
+        next_run_time += timedelta(minutes=30 - now.minute)
+    print(next_run_time)
+    # Ждем до следующего подходящего времени
+    time_to_wait = (next_run_time - now).total_seconds()
+    time.sleep(time_to_wait)
+
+    # Выполняем задачу в первый раз
+    main()
+
+    # Устанавливаем регулярное расписание
+    schedule.every(30).minutes.do(main)
+
+    # Запускаем задачу каждую 5 минут
+    #schedule.every(5).minutes.do(main)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+

@@ -1,39 +1,39 @@
-import pyautogui
-from mousDef import click_mouse
-import os
-
-file_path = r'D:\Основание\Progect Python\Skrin\Skrin\.venv\Script\new_order.png'
-
-if os.path.exists(file_path):
-    print("Путь к файлу верный.")
-else:
-    print("Путь к файлу неверен. Проверьте правильность написания.")
-
-
-def find_new_chat_button(image_path):
-    try:
-        # Находим позицию кнопки "Новый чат" на экране
-        button_location = pyautogui.locateOnScreen(image_path, confidence=0.8)
-
-        if button_location is not None:
-            center_point = pyautogui.center(button_location)
-            return center_point
-        else:
-            print(f"Кнопка не найдена. Изображение: {image_path}")
-            return None
-    except pyautogui.ImageNotFoundException:
-        print(f"Кнопка не найдена. Изображение: {image_path}")
-        return None
-
-# Используем метод для поиска кнопки
-button_coords = find_new_chat_button(file_path)
-if button_coords:
-    print(f"Координаты кнопки: {button_coords}")
-
-
-if button_coords is not None:
-    print(f"Координаты кнопки 'Новый чат': {button_coords}")
-    click_mouse(button_coords.x, button_coords.y) # Нажимаем левую кнопку мыши
+import schedule
+import time
+from datetime import datetime, timedelta
 
 
 
+
+def reset_and_start_scheduler():
+    # Сбрасываем текущий планировщик
+    schedule.clear()
+
+    # Получаем текущее время
+    now = datetime.now()
+
+    # Определяем ближайшее время для выполнения задачи
+    next_run_time = now.replace(second=1, microsecond=0)
+    print(next_run_time)
+    if now.minute >= 30:
+        next_run_time += timedelta(minutes=60 - now.minute)
+    else:
+        next_run_time += timedelta(minutes=30 - now.minute)
+    print(next_run_time)
+    # Ждем до следующего подходящего времени
+    time_to_wait = (next_run_time - now).total_seconds()
+    time.sleep(time_to_wait)
+
+    # Выполняем задачу в первый раз
+    main()
+
+    # Устанавливаем регулярное расписание
+    schedule.every(30).minutes.do(main)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+
+# Запускаем планировщик
+reset_and_start_scheduler()
