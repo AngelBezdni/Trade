@@ -25,12 +25,12 @@ def preprocess_image(image): # Преобразование в оттенки с
 
     return sharp_image
 
-def get_screen_text(x1, y1, x2, y2):
+def get_screen_text(x1, y1, x2, y2, Name):
     # Делаем скриншот указанной области экрана
     screenshot = pyautogui.screenshot(region=(x1, y1, x2-x1, y2-y1))
 
     # Сохраняем скриншот в файл, чтобы tesseract мог его обработать
-    screenshot.save('screenshot.png')
+    screenshot.save(Name)
 
 def process_screenshot(search, image): # Преобразуем список словарей в JSON
     # Открываем изображение
@@ -38,6 +38,7 @@ def process_screenshot(search, image): # Преобразуем список с�
 
     # Используем Tesseract OCR для получения текста с изображения
     text = pytesseract.image_to_string(img)
+    print(text)
 
     # Разбиваем текст на строки
     lines = text.split('\n')
@@ -132,10 +133,13 @@ def minutes_passed_since(date, time):
     # Вычисляем разницу во времени
     delta = current_datetime - given_datetime
 
+
+    # print(f"{current_datetime} -  {given_datetime} = {delta}")
+
     # Количество полных минут, прошедших с заданного времени
     minutes_passed = int(delta.total_seconds() / 60)
 
-    return minutes_passed
+    return minutes_passed + 180
 
 def open_tradingview_page():
     url = "https://ru.tradingview.com/chart/R07wFehy/"
@@ -172,5 +176,41 @@ def reset_and_start_scheduler():
     while True:
         schedule.run_pending()
         time.sleep(1)
+
+
+def process_screenshot_vxod(search, image):
+    # Открываем изображение
+    img = Image.open(image)
+
+    # Используем Tesseract OCR для получения текста с изображения
+    text = pytesseract.image_to_string(img)
+
+    # Разбиваем текст на строки
+    lines = text.split('\n')
+    #print(text)
+    result = None
+
+    # Проходимся по каждой строке и ищем строку, начинающуюся с 'Bxog'
+    for line in lines:
+        # Убираем лишние пробелы
+        line = line.strip()
+
+        if line.startswith("Bxog"):
+            result = line
+        elif line.startswith("Bxoa"):
+            result = line
+            break
+
+    return result
+
+def process_screenshot_TEXT(search, image):
+    # Открываем изображение
+    img = Image.open(image)
+
+    # Используем Tesseract OCR для получения текста с изображения
+    text = pytesseract.image_to_string(img)
+
+    return text
+
 
 

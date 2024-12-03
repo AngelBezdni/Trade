@@ -3,86 +3,161 @@ from Def.mousDef import *
 import time
 from pynput.keyboard import Key, Controller
 from datetime import datetime as dt
+import pyperclip
 
-
-def Start(interval = 5):
+def Start(interval):
     current_time = datetime.now()
     if current_time.second == 1 and current_time.minute % interval == 0:
         print(f"Current_time: {current_time} \n заданный интервал: {interval}")
-        main()
+        valu()
     elif current_time.second == 5 and current_time.minute % interval == 0:
         print(f"Current_time: {current_time} \n заданный интервал: {interval}")
-        main()
+        valu()
     elif current_time.second == 10 and current_time.minute % interval == 0:
         print(f"Current_time: {current_time} \n заданный интервал: {interval}")
-        main()
+        valu()
     time.sleep(1)
 
+def click_click(text):
+    # M30
+    click_mouse(220, 126)
+    main(text)
+    # H1
+    click_mouse(254, 125)
+    main(text)
+    #H2
+    click_mouse(282, 125)
+    main(text)
+    #H3
+    click_mouse(308, 125)
+    main(text)
+
+def valu():
+    # AUDJPY
+    click_mouse(1573, 315)
+    click_click('AUDJPY')
+
+    #USDCHF
+    click_mouse(1575, 348)
+    click_click('USDCHF')
+
+    #EURJPY
+    click_mouse(1579, 374)
+    click_click('EURJPY')
 
 
-def main():
+def main(text):
     # Вызов функции с заданными координатами
     try:
-        open_tradingview_page()
-        time.sleep(10)
-        get_screen_text(x1=360, y1=233, x2=1867, y2=1035)
+        tiker = text
+        click_mouse(341, 875)
+        time.sleep(5)
+        get_screen_text(63, 899, 1509, 1033, 'screenshot.png')
 
-        orders = parse_json(process_screenshot("ORDER", 'screenshot.png'))
+        orders = process_screenshot_vxod("ORDER", 'screenshot.png')
 
-        print(f"Последний сигнал {orders[0]}") # Выводим первое значение
+        print(orders) # Выводим строку
 
-        minutes_passed = minutes_passed_since(orders[0]['date'], orders[0]['time'])
+        # Разделение строки на части по пробелу
+        parts = orders.split()
+
+        # Извлечение даты и времени
+        date_time = parts[-4] + ' ' + parts[-3]
+
+        Action = parts[-5]
+
+        # Вывод результата
+        print(date_time)
+        print(Action)
+
+        minutes_passed = minutes_passed_since(parts[-4], parts[-3] + ":00")
 
         print(f"Прошло времени с сигнала {minutes_passed} минут")
 
         TakeProfit = ""
         StopLoss = ""
         LimitPrice = ""
-        Action = ""
         Quantity = ""
-        keyboard = Controller()
 
-        if minutes_passed < 1 and orders[0]['size'] != 0:
-            print(orders[0]['size'])
+
+        if minutes_passed < 15:
+
             # Закрываем браузер
-            click_mouse(1899, 17)
+            #click_mouse(1899, 17)
+
+            # Сворачиваем браузер
+            click_mouse(1804, 16)
 
             # Нажимае новый ордер
             click_mouse(319, 57)
+            time.sleep(1)
+            click_mouse(958, 229)
 
+            if tiker == "AUDJPY":
+                click_mouse(1002, 247)
+            elif tiker == "USDCHF":
+                click_mouse(839, 262)
+            elif tiker == "EURJPY":
+                click_mouse(824, 273)
+
+            time.sleep(5)
+            get_screen_text(778, 384, 916, 414, 'Last.png')
+            Last = process_screenshot_TEXT("ORDER", 'Last.png')
+            print(Last)
+
+            zap = 3
             # Take Profit
-            TakeProfit = round(float(orders[0]['price']) + 0.07, 3)
-            keyNewOrder(1072, 281, TakeProfit)
+            Mnoj = 0.07
+            if tiker == "USDCHF":
+                Mnoj = 0.0007
+                zap = 5
+            if Action == "buy" or Action == "Buy":
+                TakeProfit = round(float(Last) + Mnoj, zap)
+            elif Action == "sell" or Action == "Sell" or Action == "Sell.":
+                TakeProfit = round(float(Last) - Mnoj, zap)
+            keyNewOrder(1046, 283, TakeProfit)
+            time.sleep(3)
 
             # Stop Loss
-            StopLoss = round(float(orders[0]['price']) - 0.4, 3)
-            keyNewOrder(862,280,StopLoss)
+            Mnoj = 0.4
+            if tiker == "USDCHF":
+                Mnoj = 0.004
+                zap = 5
+            if Action == "buy" or Action == "Buy":
+                StopLoss = round(float(Last) - Mnoj, zap)
+            elif Action == "sell" or Action == "Sell" or Action == "Sell.":
+                StopLoss = round(float(Last) + Mnoj, zap)
+
+            keyNewOrder(832,283,StopLoss)
+            time.sleep(3)
 
             # Limit Price
-            LimitPrice = round(float(orders[0]['price']) - 0.02, 3)
-
-            # Action
-            Action = orders[0]['action']
+            LimitPrice = round(float(Last) - 0.02, 3)
 
             # Quantity
             Quantity = 0.01
             keyNewOrder(853, 257, Quantity)
+            time.sleep(3)
 
-            if Action == "buy":
+            #print("Ждем 5000")
+            #time.sleep(5000)
+            if Action == "buy" or Action == "Buy":
                 click_mouse(1030, 447)
-            elif Action == "sell":
+                time.sleep(3)
+            elif Action == "sell" or Action == "Sell" or Action == "Sell.":
                 click_mouse(824, 445)
+                time.sleep(3)
 
             click_mouse(1125, 191)
+
+            click_mouse(509, 1060)
 
             # Ждем перед следующим циклом
 
 
             time.sleep(10)
-            open_tradingview_page()
-            time.sleep(10)
         else:
-            click_mouse(1899, 17)
+            print("Сигнал не найдет")
 
     except Exception as e:
         print("Произошла ошибка:", e)
@@ -90,6 +165,10 @@ def main():
 
 
 while True:
-    Start()
+    Start(1)
+
+
+
+
 
 
