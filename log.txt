@@ -1,0 +1,13 @@
+Установлен ордер Buy TakeProfit: 97.269 StopLoss: 96.369 Last: 96.369 ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 96.91 StopLoss: 96.46 Last: 96.860
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 96.603 StopLoss: 97.053 Last: 96.653
+ ticker: AUDJPY
+Установлен ордер Sell. TakeProfit: 158.624 StopLoss: 159.074 Last: 158.674
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 0.88161 StopLoss: 0.87711 Last: 0.88111
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.88159 StopLoss: 0.87709 Last: 0.88109
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.88118 StopLoss: 0.87668 Last: 0.88068
+ ticker: USDCHF

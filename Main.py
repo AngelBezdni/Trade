@@ -5,32 +5,55 @@ from pynput.keyboard import Key, Controller
 from datetime import datetime as dt
 import pyperclip
 
+import tkinter as tk
+from threading import Thread
+from time import sleep
+
 def Start(interval):
     current_time = datetime.now()
     if current_time.second == 1 and current_time.minute % interval == 0:
-        print(f"Current_time: {current_time} \n заданный интервал: {interval}")
+        print(f"Current_time: {current_time} заданный интервал: {interval}")
         valu()
     elif current_time.second == 5 and current_time.minute % interval == 0:
-        print(f"Current_time: {current_time} \n заданный интервал: {interval}")
+        print(f"Current_time: {current_time} заданный интервал: {interval}")
         valu()
     elif current_time.second == 10 and current_time.minute % interval == 0:
-        print(f"Current_time: {current_time} \n заданный интервал: {interval}")
+        print(f"Current_time: {current_time} заданный интервал: {interval}")
         valu()
     time.sleep(1)
 
+
+def log_to_file(Action, TakeProfit, StopLoss, Last, tiker):
+    # Форматируем строку для вывода и логирования
+    message = f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} ticker: {tiker}"
+
+    # Выводим сообщение в консоль
+    print(message)
+
+    # Сохраняем сообщение в файл, открывая его в режиме добавления ('a')
+    with open('log.txt', 'a') as file:
+        file.write(message + '\n')
+
+
+
+
 def click_click(text):
-    # M30
+    timline = 30
     click_mouse(220, 126)
-    main(text)
-    # H1
+    print("M30")
+    main(text, timline)
+    timline = 60
     click_mouse(254, 125)
-    main(text)
-    #H2
+    print("H1")
+    main(text, timline)
+    timline = 120
     click_mouse(282, 125)
-    main(text)
-    #H3
+    print("H2")
+    main(text, timline)
+    timline = 180
     click_mouse(308, 125)
-    main(text)
+    print("H3")
+    main(text, timline)
 
 def valu():
     # AUDJPY
@@ -46,7 +69,7 @@ def valu():
     click_click('EURJPY')
 
 
-def main(text):
+def main(text, timeline):
     # Вызов функции с заданными координатами
     try:
         tiker = text
@@ -67,12 +90,12 @@ def main(text):
         Action = parts[-5]
 
         # Вывод результата
-        print(date_time)
-        print(Action)
+        # print(date_time)
+        # print(Action)
 
-        minutes_passed = minutes_passed_since(parts[-4], parts[-3] + ":00")
+        minutes_passed = minutes_passed_since(parts[-4], parts[-3] + ":00") - timeline
 
-        print(f"Прошло времени с сигнала {minutes_passed} минут")
+        print(f"{tiker} Прошло времени с сигнала {minutes_passed} минут")
 
         TakeProfit = ""
         StopLoss = ""
@@ -80,7 +103,7 @@ def main(text):
         Quantity = ""
 
 
-        if minutes_passed < 15:
+        if minutes_passed< 10:
 
             # Закрываем браузер
             #click_mouse(1899, 17)
@@ -103,13 +126,14 @@ def main(text):
             time.sleep(5)
             get_screen_text(778, 384, 916, 414, 'Last.png')
             Last = process_screenshot_TEXT("ORDER", 'Last.png')
-            print(Last)
+            # print(f"Last: {Last}")
 
             zap = 3
             # Take Profit
-            Mnoj = 0.07
+            Mnoj = 50
+            Mnoj = Mnoj/1000
             if tiker == "USDCHF":
-                Mnoj = 0.0007
+                Mnoj = Mnoj/100
                 zap = 5
             if Action == "buy" or Action == "Buy":
                 TakeProfit = round(float(Last) + Mnoj, zap)
@@ -121,7 +145,7 @@ def main(text):
             # Stop Loss
             Mnoj = 0.4
             if tiker == "USDCHF":
-                Mnoj = 0.004
+                Mnoj = Mnoj/100
                 zap = 5
             if Action == "buy" or Action == "Buy":
                 StopLoss = round(float(Last) - Mnoj, zap)
@@ -148,6 +172,10 @@ def main(text):
                 click_mouse(824, 445)
                 time.sleep(3)
 
+            print(f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} ticker: {tiker}")
+            # Пример использования функции
+            log_to_file(Action, TakeProfit, StopLoss, Last, tiker)
+
             click_mouse(1125, 191)
 
             click_mouse(509, 1060)
@@ -157,15 +185,15 @@ def main(text):
 
             time.sleep(10)
         else:
-            print("Сигнал не найдет")
+            a = 1 #print("Сигнал не найден \n")
 
     except Exception as e:
         print("Произошла ошибка:", e)
 
 
-
 while True:
-    Start(1)
+    Start(30)
+
 
 
 
