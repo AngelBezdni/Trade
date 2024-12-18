@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="318ee961-e1c3-4cb5-94a9-6976a5be0a0d" name="Changes" comment="New">
-      <change afterPath="$PROJECT_DIR$/Cam/Cam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cam/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Def/mouseAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Skrin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Skrin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Def/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Def/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Def/script_def.py" beforeDir="false" afterPath="$PROJECT_DIR$/Def/script_def.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Last.png" beforeDir="false" afterPath="$PROJECT_DIR$/Last.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,30 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TestGame.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UI_searh_count.executor&quot;: &quot;Run&quot;,
-    &quot;Python.click.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cursor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.drag_drop.executor&quot;: &quot;Run&quot;,
-    &quot;Python.es.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mousDef.executor&quot;: &quot;Run&quot;,
-    &quot;Python.print.executor&quot;: &quot;Run&quot;,
-    &quot;Python.replace1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.script_def.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.var1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.var2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zapusk.executor&quot;: &quot;Run&quot;,
-    &quot;Python.е.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Основание/Progect Python/Skrin/Skrin/.venv&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Main.executor": "Run",
+    "Python.TestGame.executor": "Run",
+    "Python.Trade.executor": "Run",
+    "Python.UI_searh_count.executor": "Run",
+    "Python.click.executor": "Run",
+    "Python.cursor.executor": "Run",
+    "Python.drag_drop.executor": "Run",
+    "Python.es.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mousDef.executor": "Run",
+    "Python.print.executor": "Run",
+    "Python.replace1.executor": "Run",
+    "Python.script_def.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.var1.executor": "Run",
+    "Python.var2.executor": "Run",
+    "Python.zapusk.executor": "Run",
+    "Python.е.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/manager/Trade"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Основание\Progect Python\Skrin\Skrin\.venv" />
@@ -89,7 +93,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
@@ -116,5 +120,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New" />
     <option name="LAST_COMMIT_MESSAGE" value="New" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Trade.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,6 +11,62 @@ import time
 from datetime import datetime, timedelta, timezone
 
 
+def textPlus(data):
+    # Переменная, которую нужно записать в файл data
+    now = datetime.now()
+    # Форматируем дату и время в нужный формат
+    formatted_date_time = now.strftime("%d.%m.%Y_%H.%M")
+
+    data = f"{data} {formatted_date_time} \n"
+
+    # Путь к файлу
+    file_path = r"C:\Shara\trade.txt"
+
+    try:
+        # Открываем файл в режиме записи ('w')
+        with open(file_path, 'a', encoding='utf-8') as file:
+            # Записываем данные в файл
+            file.write(data)
+
+        print("Данные успешно записаны в файл.")
+    except IOError as e:
+        print(f"Произошла ошибка при записи файла: {e}")
+
+
+def histori_scrin():
+    now = datetime.now()
+    # Форматируем дату и время в нужный формат
+    formatted_date_time = now.strftime("%d.%m.%Y_%H.%M")
+    # Формируем имя файла
+    file_histori = f"{formatted_date_time}_histori.jpg"
+    file_trade = f"{formatted_date_time}_trade.jpg"
+
+    click_mouse(52, 1001)
+    time.sleep(1)
+    get_screen_text(1, 702, 1917, 1036, f"C:\\Shara\\{file_trade}")
+
+    click_mouse(209, 1001)
+    time.sleep(1)
+    get_screen_text(1, 702, 1917, 1036, f"C:\\Shara\\{file_histori}")
+
+def limit_scrin():
+    now = datetime.now()
+    # Форматируем дату и время в нужный формат
+    formatted_date_time = now.strftime("%d.%m.%Y_%H.%M")
+    file_limit = f"{formatted_date_time}_limit.jpg"
+    time.sleep(1)
+    get_screen_text(282, 100, 1038, 477, f"C:\\Shara\\{file_limit}")
+
+
+def limit_scrin_do():
+    now = datetime.now()
+    # Форматируем дату и время в нужный формат
+    formatted_date_time = now.strftime("%d.%m.%Y_%H.%M")
+    file_limit = f"{formatted_date_time}_limit_do.jpg"
+    time.sleep(1)
+    get_screen_text(282, 100, 1038, 477, f"C:\\Shara\\{file_limit}")
+
+
 
 def preprocess_image(image): # Преобразование в оттенки серого
     # Преобразование в оттенки серого
@@ -144,38 +200,6 @@ def minutes_passed_since(date, time):
 def open_tradingview_page():
     url = "https://ru.tradingview.com/chart/R07wFehy/"
     webbrowser.open(url)
-
-def reset_and_start_scheduler():
-    # Сбрасываем текущий планировщик
-    schedule.clear()
-
-    # Получаем текущее время
-    now = datetime.now()
-
-    # Определяем ближайшее время для выполнения задачи
-    next_run_time = now.replace(second=1, microsecond=0)
-    print(next_run_time)
-    if now.minute >= 30:
-        next_run_time += timedelta(minutes=60 - now.minute)
-    else:
-        next_run_time += timedelta(minutes=30 - now.minute)
-    print(next_run_time)
-    # Ждем до следующего подходящего времени
-    time_to_wait = (next_run_time - now).total_seconds()
-    time.sleep(time_to_wait)
-
-    # Выполняем задачу в первый раз
-    main()
-
-    # Устанавливаем регулярное расписание
-    schedule.every(30).minutes.do(main)
-
-    # Запускаем задачу каждую 5 минут
-    #schedule.every(5).minutes.do(main)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
 
 
 def process_screenshot_vxod(search, image):
