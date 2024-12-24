@@ -165,3 +165,504 @@ ycnewHo
  ticker: EURJPY
 Установлен ордер Sell TakeProfit: 161.073 StopLoss: 161.543 LimitPrice: HegoctaTouHo feHer
  ticker: EURJPY
+Установлен ордер Buy TakeProfit: 161.336 StopLoss: 160.886 LimitPrice: eM BOSMOKHbIE OWMOKM NpeobpasoBaHuA CTpOKM B YucNO
+
+Paka MexAY WTepaunann
+
+‘usage 2 Your Name.
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 161.336 StopLoss: 160.886 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 96.973 StopLoss: 97.423 LimitPrice: #10093584 sell 0.01 AUDJPY.ffx no 97.020
+sl: 97.423 tp: 96.973
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 161.084 StopLoss: 161.534 LimitPrice: #10093734 sell 0.01 EURIPY.ffx no 161.127
+sl: 161.534 tp: 161.084
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89152 StopLoss: 0.89602 LimitPrice: #10094512 sell 0.01 USDCHF-ffx no 0.89521
+sl: 0.89602 tp: 0.89152
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.8982 StopLoss: 0.8937 LimitPrice: #10096027 buy 0.01 USDCHF-.ffx no 0.89796
+sl: 0.89370 tp: 0.89820
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 160.699 StopLoss: 161.149 LimitPrice: #10096053 sell 0.01 EURIPY.ffx no 160.772
+sl: 161.149 tp: 160.699
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 0.9007 StopLoss: 0.8962 LimitPrice: #10097351 buy 0.01 USDCHF.ffx no 0.90025
+sl: 0.89620 tp: 0.90070
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 160.123 StopLoss: 160.573 LimitPrice: PbIHOK 3aKpbIT
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 96.449 StopLoss: 96.899 LimitPrice: #10101388 sell 0.01 AUDJPY.ffx no 96.534
+sl: 96.899 tp: 96.449
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 97.964 StopLoss: 97.514 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 97.964 StopLoss: 97.514 LimitPrice: #10105033 buy 0.01 AUDJPY.ffx no 97.806
+sl: 97.514 tp: 97.964
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89543 StopLoss: 0.89993 LimitPrice: #10105964 sell 0.01 USDCHF-ffx no 0.89574
+sl: 0.89993 tp: 0.89543
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 98.672 StopLoss: 98.222 LimitPrice: #10110098 buy 0.01 AUDJPY.ffx no 98.610
+sl: 98.222 tp: 98.672
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.045 StopLoss: 97.595 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.045 StopLoss: 97.595 LimitPrice: #10114896 buy 0.01 AUDJPY.ffx no 98.002
+sl: 97.595 tp: 98.045
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.979 StopLoss: 162.529 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115011 buy 0.01 AUDJPY.ffx no 97.973
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.979 StopLoss: 162.529 LimitPrice: #10115025 buy 0.01 EURIPY.ffx no 162.850
+sl: 162.529 tp: 162.979
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115053 buy 0.01 AUDJPY.ffx no 97.904
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.979 StopLoss: 162.529 LimitPrice: #10115066 buy 0.01 EURIPY.ffx no 162.798
+sl: 162.529 tp: 162.979
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 162.979 StopLoss: 162.529 LimitPrice: #10115108 buy 0.01 EURIPY.ffx no 162.764
+sl: 162.529 tp: 162.979
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 162.9295 StopLoss: 162.925 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115183 buy 0.01 AUDJPY.ffx no 97.836
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.979 StopLoss: 162.529 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115626 buy 0.01 AUDJPY.ffx no 97.935
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115666 buy 0.01 AUDJPY.ffx no 97.940
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115726 buy 0.01 AUDJPY.ffx no 98.001
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10115828 buy 0.01 AUDJPY.ffx no 98.000
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116224 buy 0.01 AUDJPY.ffx no 97.725
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116239 buy 0.01 EURIJPY.ffx no 162.715
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116282 buy 0.01 AUDJPY.ffx no 97.702
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116291 buy 0.01 EURIPY.ffx no 162.679
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116325 buy 0.01 AUDJPY.ffx no 97.685
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116337 buy 0.01 EURIPY.ffx no 162.683
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116365 buy 0.01 AUDJPY.ffx no 97.722
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116397 buy 0.01 AUDJPY.ffx no 97.722
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116410 buy 0.01 EURIPY.ffx no 162.686
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116438 buy 0.01 AUDJPY.ffx no 97.716
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116447 buy 0.01 EURIPY.ffx no 162.745
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116479 buy 0.01 AUDJPY.ffx no 97.699
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116487 buy 0.01 EURIPY.ffx no 162.634
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: #10116517 buy 0.01 EURIPY.ffx no 162.589
+sl: 162.462 tp: 162.912
+ycnewHo
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116563 buy 0.01 AUDJPY.ffx no 97.679
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 98.038 StopLoss: 97.588 LimitPrice: #10116618 buy 0.01 AUDJPY.ffx no 97.703
+sl: 97.588 tp: 98.038
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 162.912 StopLoss: 162.462 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89423 StopLoss: 0.89873 LimitPrice: #10117653 sell 0.01 USDCHF-.ffx no 0.89473
+sl: 0.89873 tp: 0.89423
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89423 StopLoss: 0.89873 LimitPrice: #10117742 sell 0.01 USDCHF-ffx no 0.89452
+sl: 0.89873 tp: 0.89423
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8941 StopLoss: 0.8986 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8941 StopLoss: 0.8986 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8941 StopLoss: 0.8986 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89351 StopLoss: 0.89821 LimitPrice: #10119570 sell 0.01 USDCHF-ffx no 0.89383
+sl: 0.89821 tp: 0.89351
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8931 StopLoss: 0.8978 LimitPrice: #10119636 sell 0.01 USDCHF-.ffx no 0.89389
+sl: 0.89780 tp: 0.89310
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89351 StopLoss: 0.89821 LimitPrice: #10119698 sell 0.01 USDCHF-ffx no 0.89401
+sl: 0.89821 tp: 0.89351
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89351 StopLoss: 0.89821 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89382 StopLoss: 0.89852 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89382 StopLoss: 0.89852 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89382 StopLoss: 0.89852 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.858 StopLoss: 97.388 LimitPrice: 0.89163 / 0.89181
+
+ ticker: AUDJPY
+Установлен ордер Buy TakeProfit: 97.7887 StopLoss: 97.784 LimitPrice: 0.89175 / 0.89195
+
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.858 StopLoss: 97.388 LimitPrice: 0.89180 / 0.89197
+
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: #10122395 buy 0.01 AUDJPY.ffx no 97.815
+sl: 97.409 tp: 97.879
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: #10122397 sell 0.01 USDCHF-ffx no 0.89169
+sl: 0.89583 tp: 0.89113
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89092 StopLoss: 0.89562 LimitPrice: #10122398 sell 0.01 USDCHF-ffx no 0.89169
+sl: 0.89562 tp: 0.89092
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: #10122402 buy 0.01 AUDJPY.ffx no 97.804
+sl: 97.409 tp: 97.879
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: #10122407 sell 0.01 USDCHF-ffx no 0.89167
+sl: 0.89583 tp: 0.89113
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89092 StopLoss: 0.89562 LimitPrice: #10122412 sell 0.01 USDCHF-ffx no 0.89162
+sl: 0.89562 tp: 0.89092
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: #10122416 buy 0.01 AUDJPY.ffx no 97.777
+sl: 97.409 tp: 97.879
+ycnewHo
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89092 StopLoss: 0.89562 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89092 StopLoss: 0.89562 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89092 StopLoss: 0.89562 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.879 StopLoss: 97.409 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 163.024 StopLoss: 162.554 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 97.834 StopLoss: 97.364 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 163.123 StopLoss: 162.653 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 163.123 StopLoss: 162.653 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 97.832 StopLoss: 97.362 LimitPrice: HegoctaTouHo feHer
+ ticker: AUDJPY
+Установлен ордер Sell TakeProfit: 0.89113 StopLoss: 0.89583 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 163.123 StopLoss: 162.653 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89101 StopLoss: 0.89571 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 162.932 StopLoss: 163.402 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Buy TakeProfit: 163.219 StopLoss: 162.749 LimitPrice: HegoctaTouHo feHer
+ ticker: EURJPY
+Установлен ордер Sell TakeProfit: 0.89398 StopLoss: 0.89868 LimitPrice: #10124625 sell 0.01 USDCHF-ffx no 0.89451
+sl: 0.89868 tp: 0.89398
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89409 StopLoss: 0.89879 LimitPrice: #10125149 sell 0.01 USDCHF-.ffx no 0.89468
+sl: 0.89879 tp: 0.89409
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89409 StopLoss: 0.89879 LimitPrice: #10125419 sell 0.01 USDCHF-ffx no 0.89478
+sl: 0.89879 tp: 0.89409
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89479 StopLoss: 0.89949 LimitPrice: #10125633 sell 0.01 USDCHF-.ffx no 0.89549
+sl: 0.89949 tp: 0.89479
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 89599.9993 StopLoss: 89600.004 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8955 StopLoss: 0.9002 LimitPrice: #10126373 sell 0.01 USDCHF-ffx no 0.89621
+sl: 0.90020 tp: 0.89550
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8959 StopLoss: 0.9006 LimitPrice: #10126631 sell 0.01 USDCHF-ffx no 0.89657
+sl: 0.90060 tp: 0.89590
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.89621 StopLoss: 0.90091 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89795 StopLoss: 0.89325 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89795 StopLoss: 0.89325 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: #10128695 sell 0.01 USDCHF-ffx no 0.89923
+sl: 0.90210 tp: 0.89740
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Sell TakeProfit: 0.8974 StopLoss: 0.9021 LimitPrice: #10128891 sell 0.01 USDCHF-.ffx no 0.89975
+sl: 0.90210 tp: 0.89740
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.8993 StopLoss: 0.8946 LimitPrice: #10130210 buy 0.01 USDCHF-.ffx no 0.89869
+sl: 0.89460 tp: 0.89930
+ycnewHo
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.8993 StopLoss: 0.8946 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.8993 StopLoss: 0.8946 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89919 StopLoss: 0.89449 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89919 StopLoss: 0.89449 LimitPrice: Hepepupii S/L nnn T/P
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89919 StopLoss: 0.89449 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89919 StopLoss: 0.89449 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF
+Установлен ордер Buy TakeProfit: 0.89919 StopLoss: 0.89449 LimitPrice: HegoctaTouHo feHer
+ ticker: USDCHF

@@ -1,6 +1,9 @@
+from openpyxl.reader.excel import load_workbook
+
 from Def.script_def import *
 from Def.mousDef import *
 import time
+from openpyxl import Workbook
 from openpyxl import Workbook
 
 from pynput.keyboard import Key, Controller
@@ -14,8 +17,27 @@ from time import sleep
 timeSleep = 1
 
 
+def append_to_excel(file_path, data):
+    try:
+        # Открываем существующий файл для добавления данных
+        workbook = load_workbook(filename=file_path)
+        sheet = workbook.active
+    except FileNotFoundError:
+        # Если файла не существует, создаем новый
+        workbook = Workbook()
+        sheet = workbook.active
+
+    # Добавляем данные на новую строку
+    row_num = sheet.max_row + 1
+    sheet.cell(row=row_num, column=1).value = data
+
+    # Сохраняем изменения
+    workbook.save(file_path)
+
+
+
 # Cтавим заявку по рынку
-def newOrder(tiker, Action, zap, Quantity):
+def newOrder(tiker, Action, zap, Quantity, Last):
     histori_scrin()
 
     # Нажимае новый ордер
@@ -36,10 +58,10 @@ def newOrder(tiker, Action, zap, Quantity):
 
     # Получаем ласт
     # get_screen_text(622, 290, 806, 349, 'Last.png')
-    Last = process_screenshot_TEXT("ORDER", 'Last.png')
+    #Last = process_screenshot_TEXT("ORDER", 'Last.png')
 
     # Take Profit
-    TakeProfit = Take_Profit(tiker, Action, Last, zap)
+    TakeProfit = take_profit(tiker, Action, Last, zap)
 
     StopLoss = Stop_Loss(tiker, Action, Last, zap)
 
@@ -158,6 +180,7 @@ def log_to_file(Action, TakeProfit, StopLoss, LimitPrice, tiker):
 
 # Проходим по 4-м интервалам
 def click_click(text):
+    time.sleep(timeSleep)
     timline = 30
     click_mouse(220, 90)
     time.sleep(timeSleep)
@@ -213,18 +236,25 @@ def orders(tiker, timeline):
     return parts
 
 # Ставим Take_Profit
-def Take_Profit(tiker, Action, Last, zap):
-    Mnoj = 70
-    Mnoj = Mnoj / 1000
-    if tiker == "USDCHF":
-        Mnoj = Mnoj / 100
-        zap = 5
-    if Action == "buy" or Action == "Buy":
-        TakeProfit = round(float(Last) + Mnoj, zap)
-    elif Action == "sell" or Action == "Sell" or Action == "Sell.":
-        TakeProfit = round(float(Last) - Mnoj, zap)
+def take_profit(ticker, action, last_price, precision=5):
+    multiplier = 70 / 1000
+    if ticker == "USDCHF":
+        multiplier /= 100
+        precision = 5
 
-    return TakeProfit
+    try:
+        last_price = float(last_price)
+    except ValueError as e:
+        print(f"Невозможно преобразовать {last_price} в число: {e}")
+        return None
+
+    if action.lower() in ["buy", "sell"]:
+        sign = 1 if action.lower() == "buy" else -1
+        take_profit_value = round(last_price + sign * multiplier, precision)
+        return take_profit_value
+    else:
+        print(f"Недопустимое значение для параметра 'action': {action}")
+        return None
 
 # Ставим Stop_Loss
 def Stop_Loss(tiker, Action, Last, zap):
@@ -239,9 +269,19 @@ def Stop_Loss(tiker, Action, Last, zap):
 
     return StopLoss
 
+# Ищем ласт в сигнале
+def process_screenshot_last(image):
+    # Открываем изображение
+    img = Image.open(image)
+
+    # Используем Tesseract OCR для получения текста с изображения
+    text = pytesseract.image_to_string(img)
+
+    return text
+
 # Основная
 def main(tiker, timeline):
-    Quantity = 0.02
+    Quantity = 0.01
     passed = 15
     Limit = True
     Otctup = 0.045
@@ -263,7 +303,22 @@ def main(tiker, timeline):
 
         Action = parts[-5]
 
+        if Action == "Long":
+            Action = "Buy"
+        else:
+            Action = "Sell"
+
         if minutes_passed < passed:
+
+            get_screen_text(729, 988, 840, 1029, 'last.png')
+
+            last30 = process_screenshot_last('last.png').split()[0]
+            print(last30)
+            last30 = last30.replace(',', '.')  # Замена запятой на точку
+            print(last30)
+            last30 = float(last30)  # Преобразование строки в число с плавающей точкой
+            print(last30)
+
 
             # Сворачиваем браузер
             click_mouse(1804, 17)
@@ -287,11 +342,15 @@ def main(tiker, timeline):
             time.sleep(timeSleep)
 
             # Получаем ласт
-            get_screen_text(622, 290, 806, 349, 'Last.png')
-            Last = process_screenshot_TEXT("ORDER", 'Last.png')
+            #get_screen_text(622, 290, 806, 349, 'Last.png')
+            #Last = process_screenshot_TEXT("ORDER", 'Last.png')
+            Last = last30
+
+            print(f"tiker:{tiker} Action:{Action} Last:{Last} zap:{zap}")
 
             # Take Profit
-            TakeProfit = Take_Profit(tiker, Action, Last, zap)
+            TakeProfit = take_profit(tiker, Action, Last, zap)
+            print(TakeProfit)
 
             StopLoss = Stop_Loss(tiker, Action, Last, zap)
 
@@ -330,7 +389,7 @@ def main(tiker, timeline):
             print(f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} LimitPrice: {status} ticker: {tiker}")
             textPlus(f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} LimitPrice: {status} ticker: {tiker} ")
 
-            status = newOrder(tiker, Action, zap, Quantity)
+            status = newOrder(tiker, Action, zap, Quantity, Last)
             print(f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} Market Order: {status} ticker: {tiker}")
             textPlus(f"Установлен ордер {Action} TakeProfit: {TakeProfit} StopLoss: {StopLoss} Last: {Last} Market Order: {status} ticker: {tiker} ")
 
@@ -338,8 +397,14 @@ def main(tiker, timeline):
             log_to_file(Action, TakeProfit, StopLoss, status, tiker)
 
 
+            get_screen_text(34, 750, 537, 766, 'delta.png')
+            delta = process_screenshot_last('delta.png').split()[0]
+            append_to_excel('delta.xlsx', delta)
+
             # Разворачиваем браузер
             click_mouse(408, 1060)
+
+
 
             # Ждем перед следующим циклом
             time.sleep(10)
